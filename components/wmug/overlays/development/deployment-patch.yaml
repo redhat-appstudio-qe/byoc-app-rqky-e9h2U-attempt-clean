@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: wmug
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-bgzm-tenant/byoc-app-rqky/wmug@sha256:04a066050de634b6e5ac15a1c7993707d9a9e7b8c2a9afe92c5772adb3942d79
+        name: my-java-quarkus
+        resources: {}
+status: {}
