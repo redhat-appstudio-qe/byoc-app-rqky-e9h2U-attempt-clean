@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: wmug
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-bgzm-tenant/byoc-app-rqky/wmug@sha256:04a066050de634b6e5ac15a1c7993707d9a9e7b8c2a9afe92c5772adb3942d79
         name: my-java-quarkus
         ports:
         - containerPort: 8081
